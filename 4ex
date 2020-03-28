@@ -1,0 +1,29 @@
+package day9;
+
+import java.util.Scanner;
+
+public class Efficiency {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("Enter the time required to complete work:: ");
+		// importing scanner to read the input data
+		Scanner sc = new Scanner(System.in);
+		float input = sc.nextFloat();
+
+		System.out.print(" Employee Status ::: ");
+
+		// if case for checking the status of the employee efficiency based on the time
+		if (input >= 1 && input < 3) {
+			System.out.print(" Highly Efficient");
+		} else if (input >= 3 && input < 4) {
+			System.out.print(" Improve Speed");
+		} else if (input >= 4 && input <= 5) {
+			System.out.print(" Need Training to Improve Speed");
+		} else {
+			System.out.print(" Worker has to leave the Company");
+		}
+	}
+
+}
